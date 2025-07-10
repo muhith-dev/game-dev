@@ -15,6 +15,12 @@ public class LoadScene : MonoBehaviour
         Time.timeScale = 0;
     }
 
+    public void restartGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void resume()
     {
         Time.timeScale = 1;
