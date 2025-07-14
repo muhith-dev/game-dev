@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer sprite;
-    private PlayerController playerController; // tambahkan PlayerInputActions
+    private PlayerController playerController;
 
     // Untuk input dari button UI
     private float mobileInputX = 0f;
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         coll = GetComponent<BoxCollider2D>();
 
-        playerController = new PlayerController(); //Inisialisasi PlayerInputActions
+        playerController = new PlayerController(); 
     }
 
     private void OnEnable()
